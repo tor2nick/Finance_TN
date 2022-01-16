@@ -1,0 +1,44 @@
+What do we do as terters?
+- actual vs expected
+expected comes from : AC, requirements, documentation
+actual: from the Browser we test
+For Selenium to interact with the page:
+1. Locate WebElement
+2. Apply the action (sendKeys, click)
+
+To locate one single WebElelement Selenium uses;
+finElement method:
+***** Single element (findElement"s" for multiple elements)
+--accepts as parameter "Locators"
+-- return type of this method: WebElement
+-- coming from Selenium Library
+
+findElement(by.id,name,class,xpath....)
+
+#1. id:
+unique attribute, "dynamic"
+#2. name:
+check if it is duplicate or not
+#3. tagName:  multiple of them
+#4. classname, is good to use findElemnts method to find all the elements of a class
+#5-#6: LinkText or PartialLinkTExt: anchor Tag, to find links in the page
+What happens with these 6 locators when there is multiple (more than one of them in the page)?
+***It will find the first one
+**It will do action (sendKeys, click) to the first element
+
+P.I.Q.: Can you tell me what is the exception that you encountered the most in testing with Selenium?
+-NoSuchElementException
+When do you get that exception?
+#1. Your locator is not correct.
+#2. Started with correct locator, developer changed something
+#3. WebElement is not loaded to the page yet, we need to stop the execution of Selenium methods until the
+page is loaded  (right now Thread.sleep)  Dynamic wait methods.
+
+
+
+
+
+
+
+
+

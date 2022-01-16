@@ -1,0 +1,429 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-16T21:15:57.073Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3547000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Расход",
+        "description": "",
+        "id": "расход;расход",
+        "after": [
+          {
+            "result": {
+              "duration": 719000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4171000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Пользователь переходит на страницу входа",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_Navigates_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2707000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Пользователь входит в систему с действительными учетными данными администратора на второй странице входа.",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Пользователь кликает \u0027Добавить платеж\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Добавить платеж\u0027",
+                  "offset": 21
+                }
+              ],
+              "location": "com.Finance.step_definitions.Payments_StepDefinitions.user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4214000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Пользователь выбирает \u0027Расход\u0027 radio button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Расход\u0027",
+                  "offset": 22
+                }
+              ],
+              "location": "com.Finance.step_definitions.Expenses_StepDefinitions.user_selects_radio_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4396000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Пользователь выбирает \u0027Уменьшаемый план\u0027 from dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Уменьшаемый план\u0027",
+                  "offset": 22
+                }
+              ],
+              "location": "com.Finance.step_definitions.Expenses_StepDefinitions.user_selects_from_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\u0027Сумма факт\u0027, \u0027Счет отправителя\u0027 and \u0027Счет получателя\u0027 is disappeared",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Сумма факт\u0027",
+                  "offset": 0
+                },
+                {
+                  "val": "\u0027Счет отправителя\u0027",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027Счет получателя\u0027",
+                  "offset": 37
+                }
+              ],
+              "location": "com.Finance.step_definitions.Expenses_StepDefinitions.and_is_disappeared(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\u0027Когда\u0027 block is disappeared",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Когда\u0027",
+                  "offset": 0
+                }
+              ],
+              "location": "com.Finance.step_definitions.Expenses_StepDefinitions.block_is_disappeared(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Related Payments appeared",
+            "match": {
+              "location": "com.Finance.step_definitions.Expenses_StepDefinitions.related_Payments_appeared()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Расход",
+    "description": "",
+    "id": "расход",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Expenses.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-16T21:16:17.367Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2657000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login",
+        "description": "",
+        "id": "login;login",
+        "after": [
+          {
+            "result": {
+              "duration": 904000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4316000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Пользователь переходит на страницу входа",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_Navigates_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2700000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Пользователь входит в систему с действительными учетными данными администратора на второй странице входа.",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3011000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Пользователь попадает на главную страницу",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.userLandsOnTheHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-16T21:16:30.956Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2794000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Новый платеж",
+        "description": "",
+        "id": "новый-платеж;новый-платеж",
+        "after": [
+          {
+            "result": {
+              "duration": 763000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.Finance.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4032000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Пользователь переходит на страницу входа",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_Navigates_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2715000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Пользователь входит в систему с действительными учетными данными администратора на второй странице входа.",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3010000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Пользователь попадает на главную страницу",
+            "match": {
+              "location": "com.Finance.step_definitions.Login_StepDefinitions.userLandsOnTheHomepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Пользователь кликает \u0027Добавить платеж\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Добавить платеж\u0027",
+                  "offset": 21
+                }
+              ],
+              "location": "com.Finance.step_definitions.Payments_StepDefinitions.user_clicks(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2024000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Пользователь попадает на \u0027Добавить платеж\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Добавить платеж\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "com.Finance.step_definitions.Payments_StepDefinitions.user_lands_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Новый платеж",
+    "description": "",
+    "id": "новый-платеж",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Payments.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
